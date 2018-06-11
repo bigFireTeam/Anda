@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <home-index />
   </div>
 </template>
 
 <script>
+import HomeIndex from './pages/home/index'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HomeIndex
+  }
 }
 </script>
 
