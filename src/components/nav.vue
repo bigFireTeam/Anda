@@ -1,16 +1,10 @@
 <template>
-  <div id="h_home">
-
-  </div>
+  <nav></nav>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-
-    }
-  }
+  
 }
 </script>
 

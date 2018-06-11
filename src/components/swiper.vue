@@ -15,7 +15,7 @@
     <div class="swiper-scrollbar"   slot="scrollbar"></div>
   </swiper>
 </template>
-
+ 
 <script>
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
