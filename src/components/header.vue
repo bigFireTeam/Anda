@@ -19,16 +19,15 @@
 import HraderNav from './nav'
 export default {
   components: {
-    HraderNav,
+    HraderNav
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  .header {
-    display: flex;
-    .row { 
-      
+  header {
+    .row {
+      justify-content: space-between;
     }
   }
 </style>

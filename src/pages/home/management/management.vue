@@ -1,0 +1,69 @@
+<template>
+  <div class="management pagesHeight">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+            <img src="/static/home/management/Group1.png" class="group1" />
+            <img src="/static/home/management/Group2.png" class="group2" />
+          </div>
+        <div class="col-md-8 div-height" ref="colHieght">
+          <div class="management-cont">
+            <h1>智能云后台管理</h1>
+            <p>
+              Ada管家云后台对接智能硬件、用户端，前台统一管理调度，数<br/>据直接生成报表，随时登录，灵活查询，让商家运筹帷幄，打造AI+餐厅。
+            </p>
+            <p>
+              通过Ada智能硬件的强大功能实现扫码充电、关注、点餐、买<br/>单、互动、一键及语音呼叫等功能，数据收集到云后台，从云后<br/>台查看，方便商家进行管理。
+            </p>
+          </div>      
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    divHieght () {
+      // this.$refs.divHeight.style.height = window.innerHeight + 'px'
+      this.$refs.colHieght.style.height = window.innerHeight + 'px'
+    }
+  },
+  mounted () {
+    // this.divHieght()
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.management {
+  position: relative;
+  background: url('/static/home/management/Group3.png') no-repeat center top;
+  margin-top: 5.56rem;
+  .div-height {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 3.13rem;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    text-align: justify;
+  }
+  p {
+    font-family: PingFangSC-Regular;
+    font-size: 1.13rem;
+    color: #FFFFFF;
+    letter-spacing: 1.8px;
+    text-align: justify;
+    line-height: 1.88rem;
+  }
+  .group1, .group2 {
+    width: 100%;
+    position: absolute;
+  }
+}
+</style>

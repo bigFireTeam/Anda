@@ -1,0 +1,86 @@
+<template>
+  <div class="img-bg pagesHeight">
+    <div class="row">
+      <div class="col-md-2 img-padding">
+        <div class="good1">
+          <img src="/static/home/goods/good1.png" />
+        </div>
+        <div class="good2">
+          <img src="/static/home/goods/good2.png" />
+        </div>
+      </div>
+      <div class="col-md-4 div-img-bg">
+        <div class="love-div">
+          <h1>懂你所爱 为你着想</h1>
+          <p>只需要一键授权，即可链接ADA大数据享受只能到店助<br/>
+        理服务<br/>
+        通过MAGIC SENSOR智能系统分析用户餐饮习惯，<br/>
+        并立即做出千人千面的点餐推荐。安全保护隐私，数<br/>
+        据既享即清。
+          </p>
+        </div>
+      </div>
+      <div class="col-md-2 img-padding">
+         <div class="good1">
+          <img src="/static/home/goods/good4.png" />
+        </div>
+        <div class="good2">
+          <img src="/static/home/goods/good5.png" />
+        </div>
+      </div>
+      <div class="col-md-4 img-padding">
+        <img src="/static/home/goods/good6.png" />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+
+export default {
+  data () {
+    return {
+    }
+  }  
+}
+</script>
+
+<style lang="scss" scoped>
+.img-bg {
+  margin-top: 6.31rem;
+  .row {
+    margin: 0;
+    .img-padding {
+      padding: 0;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+    .div-img-bg {
+      background-image: linear-gradient(-48deg, #4592FF 0%, #43DFC0 99%);
+      background: url('/static/home/goods/good3.png') no-repeat center center;
+      background-size: cover;
+      .line-style  {
+        line-height: 20px;
+        font-size: 14px;
+      }
+      .love-div {
+        margin-left: 2.44rem;
+        margin-top: 12rem;
+      }
+      h1 {
+        font-family: PingFangSC-Semibold;
+        font-size: 2.5rem;
+        color: #FFFFFF;
+        letter-spacing: 2.5px;
+        line-height: 3.75rem;
+      }
+      p {
+        font-size: .875rem;
+        color: #fff;
+      }
+    }
+  }
+}
+</style>
