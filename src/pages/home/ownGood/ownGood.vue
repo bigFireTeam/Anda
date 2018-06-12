@@ -3,13 +3,13 @@
     <div class="row">
       <div class="col-md-2 img-padding">
         <div class="good1">
-          <img src="/static/home/goods/good1.png" />
+          <img src="/static/home/goods/good1.png" class="g-p-style"/>
         </div>
         <div class="good2">
-          <img src="/static/home/goods/good2.png" />
+          <img src="/static/home/goods/good2.png" class="g-p-style"/>
         </div>
       </div>
-      <div class="col-md-4 div-img-bg">
+      <div class="col-md-4 div-img-bg g-p-style">
         <div class="love-div">
           <h1>懂你所爱 为你着想</h1>
           <p>只需要一键授权，即可链接ADA大数据享受只能到店助<br/>
@@ -22,14 +22,14 @@
       </div>
       <div class="col-md-2 img-padding">
          <div class="good1">
-          <img src="/static/home/goods/good4.png" />
+          <img src="/static/home/goods/good4.png" class="g-p-style"/>
         </div>
         <div class="good2">
-          <img src="/static/home/goods/good5.png" />
+          <img src="/static/home/goods/good5.png" class="g-p-style"/>
         </div>
       </div>
       <div class="col-md-4 img-padding">
-        <img src="/static/home/goods/good6.png" />
+        <img src="/static/home/goods/good6.png" class="g-p-style" />
       </div>
     </div>
   </div>

@@ -4,6 +4,7 @@ class MethodFn {
     let divHeight = document.querySelectorAll(cls)
     for (let i = 0; i < divHeight.length; i++) {
       divHeight[i].style.height = window.innerHeight + 'px'
+      divHeight[i].style.overflow = 'hidden'
     }
   }
 }
