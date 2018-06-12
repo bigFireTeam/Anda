@@ -8,6 +8,8 @@
     <home-word />
     <own-good />
     <management />
+    <ai></ai>
+    <team></team>
   </div>
 </template>
 
@@ -19,6 +21,9 @@ import HomeWord from './word/word'
 import OwnGood from './ownGood/ownGood'
 import Management from './management/management'
 import MethodFn from '../../Tools/method.js'
+import ai from './product/AI'
+import team from './team/team'
+
 export default {
   data () {
     return {
@@ -30,12 +35,13 @@ export default {
     HomeRestaurant,
     HomeWord,
     OwnGood,
-    Management
+    Management,
+    ai,
+    team,
   },
   mounted () {
     const _methodFn = new MethodFn();
     _methodFn.pageHeight('.pagesHeight')
-
   }
 }
 </script>
