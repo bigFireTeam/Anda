@@ -48,7 +48,7 @@ export default {
   }
   .div-img {
     img {
-      width: 80%;
+      width: 50%;
       margin: 0 auto;
       display: block;
     }

@@ -46,6 +46,10 @@ export default {
     justify-content: center;
     align-items: center;
   }
+  .management-cont {
+    margin-top: 23rem;
+    margin-left: 30rem;
+  }
   h1 {
     font-family: PingFangSC-Medium;
     font-size: 3.13rem;
@@ -62,8 +66,19 @@ export default {
     line-height: 1.88rem;
   }
   .group1, .group2 {
-    width: 100%;
     position: absolute;
+  }
+  .group1 {
+    width: 46.56rem;
+    height: 32.75rem;
+    left: 19.69rem;
+    top: 12rem;
+  }
+  .group2 {
+    width: 49.63rem;
+    height: 33.38rem;
+    top: 17.69rem;
+    left: 23.69rem;
   }
 }
 </style>

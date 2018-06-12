@@ -8,6 +8,9 @@
     <home-word />
     <own-good />
     <management />
+    <Charging />
+    <improvement />
+    <calling />
     <ai></ai>
     <team></team>
   </div>
@@ -20,10 +23,12 @@ import HomeRestaurant from './Restaurant/restaurant'
 import HomeWord from './word/word'
 import OwnGood from './ownGood/ownGood'
 import Management from './management/management'
-import MethodFn from '../../Tools/method.js'
+import Charging from './charging/charging'
+import Improvement from './improvement/improvement'
+import Calling from './calling/calling'
 import ai from './product/AI'
 import team from './team/team'
-
+import MethodFn from '../../Tools/method.js'
 export default {
   data () {
     return {
@@ -36,6 +41,9 @@ export default {
     HomeWord,
     OwnGood,
     Management,
+    Charging,
+    Improvement,
+    Calling,
     ai,
     team,
   },

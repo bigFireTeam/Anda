@@ -47,7 +47,7 @@ export default {
 
 <style lang="scss" scoped>
 .img-bg {
-  margin-top: 6.31rem;
+  padding-top: 6.31rem;
   .row {
     margin: 0;
     .img-padding {
