@@ -1,18 +1,41 @@
 <template>
   <div id="h_home">
-    <div class="bgImg pagesHeight">
-      <asd-header />
-      <header-cont />
-    </div>
-    <home-restaurant />
-    <home-word />
-    <own-good />
-    <management />
-    <Charging />
-    <improvement />
-    <calling />
-    <ai></ai>
-    <team></team>
+    <swiper :options="swiperOption" ref="swiperEl">
+      <swiper-slide>
+        <div class="bgImg pagesHeight">
+          <asd-header />
+          <header-cont />
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <home-restaurant /> 
+      </swiper-slide>
+      <swiper-slide>
+        <home-word />
+      </swiper-slide>
+      <swiper-slide>
+        <own-good />
+      </swiper-slide>
+      <swiper-slide>
+        <management />
+      </swiper-slide>
+      <swiper-slide>
+        <Charging />
+      </swiper-slide>
+      <swiper-slide>
+        <improvement />
+      </swiper-slide>
+      <swiper-slide>
+        <calling />
+      </swiper-slide>
+      <swiper-slide>
+        <ai/>
+      </swiper-slide>
+      <swiper-slide>
+        <team/>
+      </swiper-slide>
+      <div class="swiper-pagination"  slot="pagination"></div>
+    </swiper>
   </div>
 </template>
 
@@ -32,6 +55,13 @@ import MethodFn from '../../Tools/method.js'
 export default {
   data () {
     return {
+      swiperOption: {
+        direction: 'vertical',
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+      }
     }
   },
   components: {

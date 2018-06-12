@@ -6,8 +6,11 @@ import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Rem from './assets/js/responsive'
-
+import MethodFn from './Tools/method'
+import './assets/js/iconfont'
 import 'swiper/dist/css/swiper.css'
+
+Vue.prototype.$methodFn = new MethodFn()
 
 Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false

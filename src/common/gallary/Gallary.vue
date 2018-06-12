@@ -1,27 +1,51 @@
 <template>
     <div :class="$style.container">
       <div :class="$style.warpper">
-        <swiper :options="swiperOption">
-          <swiper-slide v-for="(item, index) of imgs" :key="'img'+index">
+        <swiper :options="swiperOption" ref="swiperEl">
+          <swiper-slide v-for="(item, index) of team" :key="'img'+index">
             <div :class="$style.imgBox">
               <img :class="$style.img"
-              :src="item" alt="">
+              :src="item.img" alt="">
               <div :class="$style.info_card">
                 <h4 :class="$style.info_title">
-                  David
-                  Richards
+                  ${{item.name}}
                 </h4>
                 <div :class="$style.info_position">
-                  CEO & Founde
+                  ${{item.position}}
                 </div>
                 <div :class="$style.info_icons">
-                  <span>FB </span><span>TW </span><span>LI</span>
+                  <span>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#i-facebook"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#i-twitter"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#i-linkedin"></use>
+                    </svg>
+                  </span>                 
                 </div>
               </div>
             </div>
           </swiper-slide>
-          <div class="swiper-pagination"  slot="pagination"></div>
         </swiper>
+      </div>
+      <div :class="$style.btn_container">
+        <div :class="$style.button_prev" @click.native="btn_pre">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#i-arrow_left"></use>
+          </svg>
+        </div>
+        <div :class="$style.button_next"  @click.native="btn_next">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#i-arrow-right"></use>
+          </svg>
+        </div>
       </div>
     </div>
 </template>
@@ -31,10 +55,10 @@
 export default {
   name: 'CommonGallary',
   props: {
-    imgs: {
+    team: {
       type: Array,
       default () {
-        return ['/static/home/home-team-1.png','/static/home/home-team-1.png','/static/home/home-team-1.png','/static/home/home-team-1.png']
+        return []
       }
     },
     show: Boolean
@@ -45,28 +69,57 @@ export default {
         slidesPerView: 2.5,
         centeredSlides: true,
         spaceBetween: '3%',
+        autoplay: true,
         loop: true,
-        // autoplay: true,
         speed: 500,
         delay: 8,
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'fraction',
-          observeParents: true,
-          observer: true
-        }
+        navigation: {
+          nextEl: `.${this.$style.button_prev}`,
+          prevEl: `.${this.$style.button_next}`
+        },
       }
     }
   },
+  computed: {
+    swiper() {
+      return this.$refs.swiperEl.swiper
+    }
+  },
   methods: {
-    handleGallaryClick () {
-      this.$emit('close')
+    btn_pre() {
+      this.swiper.slideNext()
+    },
+    btn_next() {
+      this.swiper.slidePrev()
     }
   }
 }
 </script>
 
 <style module>
+
+  .container {
+    position: relative;
+  }
+
+  .btn_container {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -2rem;
+  }
+
+  .button_prev,
+  .button_next {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1;
+    padding: .6rem;
+    margin-right: 1rem;
+    border: 1px #e2e2e2 solid;
+    border-radius: 50%;
+  }
 
   .info_card {
     position: absolute;
@@ -93,6 +146,7 @@ export default {
     position: absolute;
     bottom: 1.5rem;
     left: 1.5rem;
+    font-size: 1rem;
   }
 
   :global(.swiper-slide) {
@@ -117,38 +171,5 @@ export default {
     border-radius: .625rem;
     width: 100%;
   }
-
-  /* :global(.swiper-pagination-fraction) {
-    color: #fff;
-    bottom: -1rem;
-  }
-
-  :global(.swiper-container) {
-    overflow: inherit;
-  }
-
-  .container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    z-index: 99;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
-  }
-
-  .warpper {
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-  }
-
-  .img {
-    width: 100%;
-  } */
 
 </style>
