@@ -1,13 +1,13 @@
 <template>
   <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link" href="#home">home</a>
+      <a class="nav-link" href="javascript:void(0)" @click="handelClick(0)">home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#product">product</a>
+      <a class="nav-link" href="javascript:void(0)">product</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#team">team</a>
+      <a class="nav-link" href="javascript:void(0)" @click="handelClick(10)">team</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#pricing">pricing</a>
@@ -17,6 +17,11 @@
 
 <script>
 export default {
+  methods: {
+    handelClick(index) {
+      this.$eventHub.$emit('navClick', index)
+    }
+  }
 }
 </script>
 

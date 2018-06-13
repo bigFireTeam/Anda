@@ -1,5 +1,5 @@
 <template>
-  <div class="pagesHeight AI-style">
+  <div class="pagesHeight">
     <big-bg :imgUrl="images[0]">
       <div class="centerText-10">
         <h1>AI芯片组M1000 强悍性能 超低能耗</h1>
@@ -29,9 +29,6 @@
 </script>
 
 <style scoped lang="scss">
-  .AI-style {
-    margin-top: 8.13rem;
-  }
   .centerText-10 {
     position: absolute;
     bottom: 0;
