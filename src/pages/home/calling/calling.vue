@@ -21,7 +21,8 @@ export default {
 .calling-div {
   background: url("/static/home/calling/pages1.png") no-repeat center center;
   // margin-top: 2.94rem;
-  background-size: cover;
+  // background-size: cover;
+  background-size: 100% 114%;
   .row {
     justify-content: flex-end;
     align-items: center;

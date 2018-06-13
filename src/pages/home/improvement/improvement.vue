@@ -18,7 +18,8 @@ export default {
 <style lang="scss" scoped>
 .improvement-style {
   background: url("/static/home/Improvement/page1.png") no-repeat center center;
-  background-size: cover;
+  // background-size: cover;
+  background-size: 105% 113%;
   // margin-top: 2.94rem;
   h1 {
     font-family: PingFangSC-Medium;

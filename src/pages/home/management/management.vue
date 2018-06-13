@@ -40,6 +40,7 @@ export default {
 .management {
   position: relative;
   background: url('/static/home/management/Group3.png') no-repeat center top;
+  background-size: cover;
   // margin-top: 5.56rem;
   .div-height {
     display: flex;

@@ -93,6 +93,7 @@ export default {
 }
 .cont-div-img {
   background: url('/static/home/restaurant/Group13.png') no-repeat;
+  background-size: cover;
 }
 .div-bg {
   background: #4592FF url('/static/home/restaurant/Group11.png') no-repeat;
@@ -100,6 +101,7 @@ export default {
   border-radius: 10px;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
+  background-size: cover;
 }
 .ul-img {
   display: flex;
@@ -123,5 +125,8 @@ export default {
       margin-top: 1.2rem;
     }
   }
+}
+@media (max-width: 1000px) {
+
 }
 </style>
