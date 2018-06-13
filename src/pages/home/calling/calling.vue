@@ -20,7 +20,7 @@ export default {
 <style lang="scss" scoped>
 .calling-div {
   background: url("/static/home/calling/pages1.png") no-repeat center center;
-  margin-top: 2.94rem;
+  // margin-top: 2.94rem;
   background-size: cover;
   .row {
     justify-content: flex-end;

@@ -31,7 +31,7 @@ export default {
   margin-top: 8.38rem;
   background-image: linear-gradient(0deg, #ECF3FF 3%, #FFFFFF 100%);
   h1{
-    margin-top: 11.19rem;
+    margin-top: 2.19rem;
     text-align: center;
     font-family: PingFangSC-Regular;
     font-size: 3.1rem;

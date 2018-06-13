@@ -87,6 +87,10 @@ export default {
   box-shadow: 0 20px 20px 0 rgba(117,117,117,0.10);
   border-radius: 10px;
 }
+.restaurant {
+  display: flex;
+  align-items: center;
+}
 .cont-div-img {
   background: url('/static/home/restaurant/Group13.png') no-repeat;
 }

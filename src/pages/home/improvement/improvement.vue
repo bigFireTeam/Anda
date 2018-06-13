@@ -19,7 +19,7 @@ export default {
 .improvement-style {
   background: url("/static/home/Improvement/page1.png") no-repeat center center;
   background-size: cover;
-  margin-top: 2.94rem;
+  // margin-top: 2.94rem;
   h1 {
     font-family: PingFangSC-Medium;
     font-size: 2.5rem;
