@@ -8,7 +8,7 @@
               <h1>
                 2018 Ada全球合作商家重磅上市
               </h1>
-              <p class="ads-title">
+              <p style="display: block !important;  margin-top: 2.31rem;line-height: 3.5rem;">
                 <img :src="adsTitle" />
               </p>
               <p>
@@ -55,8 +55,7 @@ export default {
   .ads-title {
     margin-top: 2.31rem;
     display: block !important;
-    // line-height: 3.5rem;
-    // background: linear-gradient(to right, #78EE85 0%, #1297FF 100%);
+    line-height: 3.5rem;
   }
   .p-s-style {
     margin-top: 2.81rem;
