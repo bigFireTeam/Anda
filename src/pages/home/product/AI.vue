@@ -2,8 +2,8 @@
   <div class="pagesHeight">
     <big-bg :imgUrl="images[0]">
       <div class="centerText-10">
-        <h1>AI芯片组M1000 强悍性能 超低能耗</h1>
-        <p> 
+        <h1 class="animate fadeInLeft fadeOutRight">AI芯片组M1000 强悍性能 超低能耗</h1>
+        <p class="animate fadeInLeft fadeOutRight"> 
             迄今为止最强悍的AI芯片。Ada-SMART-BOX大脑核心
             <br>4核64位，100NM制程工艺，采用旗舰架构，单核主频可达2.2GHz
             <br>高性能、低能耗，如虎添翼快上加快。

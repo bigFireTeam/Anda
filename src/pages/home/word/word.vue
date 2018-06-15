@@ -3,8 +3,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h1>{{h1Title}}</h1>
-          <p>{{pTitle}}</p>
+          <h1 class="animate fadeInLeft fadeOutRight">{{h1Title}}</h1>
+          <p class="animate fadeInLeft fadeOutRight">{{pTitle}}</p>
           <div class="div-img">
             <img :src="imgurl" />
           </div> 

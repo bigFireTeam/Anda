@@ -2,7 +2,7 @@
   <div class="pagesHeight calling-div">
     <div class="container-fluid">
       <div class="row pagesHeight">
-        <div class="calling-style">
+        <div class="calling-style animate fadeInLeft fadeOutRight">
           <h1>一键呼叫<br/>后台管理顾客呼叫服务</h1>
           <p>对接Ada智能管理，由前台统一调度，根据响应速度<br/>和次数，作为服务员另一项绩效考核参</p>
         </div>

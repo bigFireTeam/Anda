@@ -5,14 +5,14 @@
         <div class="row">
           <div class="col-md-6">
             <div class="title">
-              <h1>
+              <h1 class="animate fadeInLeft fadeOutRight">
                 2018 Ada全球合作商家重磅上市
               </h1>
-              <p style="display: block !important;  margin-top: 2.31rem;line-height: 3.5rem;">
+              <p style="display: block !important;  margin-top: 2.31rem;line-height: 3.5rem;" class="animate fadeInLeft fadeOutRight">
                 <img :src="adsTitle" />
               </p>
               <p>
-                <span class="p-s-style">
+                <span class="p-s-style animate fadeInLeft fadeOutRight">
                   Ada＆百度AI实验室全新智献<br/>
                   全球首款涵盖生活餐饮娱乐全场景
                 </span>

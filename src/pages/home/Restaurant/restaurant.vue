@@ -8,6 +8,7 @@
               :h1Titel='h1Titel'
               :pTitle='pTitle'
               :spanTitle='spanTitle'
+              class="animate fadeInLeft fadeOutRight"
             />
           </div>
           <div class="icon-div">

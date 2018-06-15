@@ -1,6 +1,6 @@
 <template>
   <div class="pagesHeight improvement-style">
-    <div class="improvement-div">
+    <div class="improvement-div animate fadeInLeft fadeOutRight">
       <h1>扫码点餐<br/>提升体验 节约时间成本</h1>
       <p>
         客人扫描Ada上的二维码，即可自助点餐完成下单及支付环节，<br/>节约时间，简单、便捷，店铺节约员工成本，提高翻台率；通过<br/>Ada软件与硬件集合还可实现多人在线协同点餐。

@@ -7,8 +7,8 @@
             <img src="/static/home/Group2.png" class="group2" />
           </div>
         <div class="col-md-8 div-height" ref="colHieght">
-          <div class="management-cont">
-            <h1>智能云后台管理</h1>
+          <div class="management-cont animate fadeInLeft fadeOutRight">
+            <h1 c>智能云后台管理</h1>
             <p>
               Ada管家云后台对接智能硬件、用户端，前台统一管理调度，数<br/>据直接生成报表，随时登录，灵活查询，让商家运筹帷幄，打造AI+餐厅。
             </p>

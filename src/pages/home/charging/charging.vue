@@ -2,7 +2,7 @@
   <div class="charging pagesHeight">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6 col-div-position">
+        <div class="col-md-6 col-div-position  animate fadeInLeft fadeOutRight">
           <h1>扫码充电 推官商家线上媒体号</h1>
           <p>自媒体当道，流量顾客金贵，来餐厅消费的都是真爱粉，流量岂能白<br/>白浪费。扫码充电，提供了WIFI以外的另一个高频入口为餐厅顾客粉<br/>丝社群吸粉实现最大化。</p>
         </div>

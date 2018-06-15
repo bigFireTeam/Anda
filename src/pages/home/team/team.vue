@@ -1,6 +1,6 @@
 <template>
   <div :class="[$style.team_container, 'js-team-container']" id="team">
-    <h1 :class="$style.team_header">
+    <h1 :class="[$style.team_header,'animate fadeInLeft fadeOutRight']">
       <strong>团队介绍</strong>
       <br><small>Team Introduction</small>
     </h1>
