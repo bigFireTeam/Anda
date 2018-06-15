@@ -14,15 +14,15 @@
     name: 'team',
     data(){
       return {
-        teams: [{ img: '/static/home/home-team-1.png',
+        teams: [{ img: '/static/home/home-team-1.jpg',
                   name: `David
                   Richards`,
                   position: 'CEO & Founde'},
-                  { img: '/static/home/home-team-1.png',
+                  { img: '/static/home/home-team-1.jpg',
                   name: `David
                   Richards`,
                   position: 'CEO & Founde'},
-                  { img: '/static/home/home-team-1.png',
+                  { img: '/static/home/home-team-1.jpg',
                   name: `David
                   Richards`,
                   position: 'CEO & Founde'}]

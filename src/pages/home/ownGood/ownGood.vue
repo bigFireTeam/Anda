@@ -3,10 +3,10 @@
     <div class="row">
       <div class="col-md-2 img-padding">
         <div class="good1">
-          <img src="/static/home/goods/good1.png" class="g-p-style"/>
+          <img src="/static/home/good1.jpg" class="g-p-style"/>
         </div>
         <div class="good2">
-          <img src="/static/home/goods/good2.png" class="g-p-style"/>
+          <img src="/static/home/good2.jpg" class="g-p-style"/>
         </div>
       </div>
       <div class="col-md-4 div-img-bg g-p-style">
@@ -22,14 +22,14 @@
       </div>
       <div class="col-md-2 img-padding">
          <div class="good1">
-          <img src="/static/home/goods/good4.png" class="g-p-style"/>
+          <img src="/static/home/good4.jpg" class="g-p-style"/>
         </div>
         <div class="good2">
-          <img src="/static/home/goods/good5.png" class="g-p-style"/>
+          <img src="/static/home/good5.jpg" class="g-p-style"/>
         </div>
       </div>
       <div class="col-md-4 img-padding">
-        <img src="/static/home/goods/good6.png" class="g-p-style" />
+        <img src="/static/home/good6.jpg" class="g-p-style" />
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@ export default {
     }
     .div-img-bg {
       background-image: linear-gradient(-48deg, #4592FF 0%, #43DFC0 99%);
-      background: url('/static/home/goods/good3.png') no-repeat center center;
+      background: url('/static/home/good3.jpg') no-repeat center center;
       background-size: cover;
       .line-style  {
         line-height: 20px;

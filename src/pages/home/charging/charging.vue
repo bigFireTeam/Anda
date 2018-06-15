@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .charging {
-  background: url("/static/home/charging/Group.png") no-repeat center center;
+  background: url("/static/home/Group.jpg") no-repeat center center;
   background-size: cover;
   .col-div-position {
     margin-top: 17.75rem;

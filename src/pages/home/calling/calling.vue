@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .calling-div {
-  background: url("/static/home/calling/pages1.png") no-repeat center center;
+  background: url("/static/home/pages1.jpg") no-repeat center center;
   // margin-top: 2.94rem;
   // background-size: cover;
   background-size: 100% 114%;

@@ -19,7 +19,7 @@
     name: 'team',
     data(){
       return {
-        images: ['/static/home/home-10.png']
+        images: ['/static/home/home-10.jpg']
       }
     },
     components: {

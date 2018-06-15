@@ -117,7 +117,7 @@ export default {
 
   .bgImg {
     background-image: linear-gradient(34deg, #ECF3FF 0%, #FFFFFF 100%);
-    background: url('/static/home/Group7.png') no-repeat right bottom;
+    background: url('/static/home/Group7.jpg') no-repeat right bottom;
     // background-size: cover;
     background-size: 100% 160%;
   }

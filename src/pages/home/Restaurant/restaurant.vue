@@ -39,35 +39,35 @@ export default {
       餐厅的24小时经营管理店长`,
       iconUrl: [
         {
-          imgUrl: '/static/home/restaurant/icon/Group13.png',
+          imgUrl: '/static/home/icon/Group13.png',
           iconFont: '共享充电'
         },
         {
-          imgUrl: '/static/home/restaurant/icon/Group14.png',
+          imgUrl: '/static/home/icon/Group14.png',
           iconFont: '定位'
         },
         {
-          imgUrl: '/static/home/restaurant/icon/Group15.png',
+          imgUrl: '/static/home/icon/Group15.png',
           iconFont: '手势及语音呼叫'
         },
         {
-          imgUrl: '/static/home/restaurant/icon/Group15.png',
+          imgUrl: '/static/home/icon/Group15.png',
           iconFont: '点餐'
         },
         {
-          imgUrl: '/static/home/restaurant/icon/Group17.png',
+          imgUrl: '/static/home/icon/Group17.png',
           iconFont: '支付'
         },
         {
-          imgUrl: '/static/home/restaurant/icon/Group18.png',
+          imgUrl: '/static/home/icon/Group18.png',
           iconFont: '远程选桌'
         },
         {
-          imgUrl: '/static/home/restaurant/icon/Group19.png',
+          imgUrl: '/static/home/icon/Group19.png',
           iconFont: '餐厅360°'
         },
         {
-          imgUrl: '/static/home/restaurant/icon/Group20.png',
+          imgUrl: '/static/home/icon/Group20.png',
           iconFont: '70+技能云'
         }
       ]
@@ -92,11 +92,11 @@ export default {
   align-items: center;
 }
 .cont-div-img {
-  background: url('/static/home/restaurant/Group13.png') no-repeat;
+  background: url('/static/home/Group13.jpg') no-repeat;
   background-size: cover;
 }
 .div-bg {
-  background: #4592FF url('/static/home/restaurant/Group11.png') no-repeat;
+  background: #4592FF url('/static/home/Group11.jpg') no-repeat;
   padding-bottom: 6.3rem;
   border-radius: 10px;
   padding-right: 1.25rem;
@@ -125,8 +125,5 @@ export default {
       margin-top: 1.2rem;
     }
   }
-}
-@media (max-width: 1000px) {
-
 }
 </style>

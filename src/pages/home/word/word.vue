@@ -18,7 +18,7 @@
 export default {
   data () {
     return {
-      imgurl: '/static/home/word/Group24.png',
+      imgurl: '/static/home/Group24.png',
       h1Title: `外观轻巧考究，性能厚积薄发`,
       pTitle: `真正的小身材大大大智慧`
     }

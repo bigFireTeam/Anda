@@ -3,8 +3,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
-            <img src="/static/home/management/Group1.png" class="group1" />
-            <img src="/static/home/management/Group2.png" class="group2" />
+            <img src="/static/home/Group1.png" class="group1" />
+            <img src="/static/home/Group2.png" class="group2" />
           </div>
         <div class="col-md-8 div-height" ref="colHieght">
           <div class="management-cont">
@@ -39,7 +39,7 @@ export default {
 <style lang="scss" scoped>
 .management {
   position: relative;
-  background: url('/static/home/management/Group3.png') no-repeat center top;
+  background: url('/static/home/Group3.jpg') no-repeat center top;
   background-size: cover;
   // margin-top: 5.56rem;
   .div-height {
