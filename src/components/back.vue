@@ -7,7 +7,9 @@ export default {
   methods: {
     backTop () {
       this.swiper.slideTo(0)
-    }
+    },
+
+
   }
 }
 </script>

@@ -98,8 +98,6 @@ export default {
     this.$eventHub.$on('navClick', (index) => {
       this.slideTo(index)
     })
-
-
   },
   methods: {
     slideTo(index){
