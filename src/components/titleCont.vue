@@ -43,7 +43,6 @@ export default {
   white-space: pre-line;
 }
 .line-p-style {
-  font-family: PingFangSC-Regular;
   font-size: 1rem;
   color: #FFFFFF;
   letter-spacing: 1.6px;

@@ -30,7 +30,6 @@ export default {
   margin-top: 3.44rem;
   .nav-item {
     a {
-      font-family: "微软雅黑";
       font-size: 1rem;
       color: #203152;
       opacity: .4;

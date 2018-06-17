@@ -43,7 +43,6 @@ export default {
     letter-spacing: 0.4px;
   }
   p {
-    font-family: PingFangSC-Regular;
     font-size: 1.13rem;
     color: #FFFFFF;
     line-height: 2.81rem;

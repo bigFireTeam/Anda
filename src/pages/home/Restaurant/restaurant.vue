@@ -146,7 +146,6 @@ export default {
       transition: all 0.5s cubic-bezier(0.48, 0.5, 0.2, 1);
     }
     p {
-      font-family: '微软雅黑';
       font-size: 1rem;
       color: #203152;
       letter-spacing: 0.92px;

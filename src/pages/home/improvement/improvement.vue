@@ -37,7 +37,6 @@ export default {
     text-align: justify;
   }
   p {
-    font-family: PingFangSC-Regular;
     font-size: 1.13rem;
     color: #4E4E4E;
     letter-spacing: 1.8px;

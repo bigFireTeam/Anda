@@ -1,5 +1,5 @@
 <template>
-  <div class="backImg" @click="backTop()"></div>
+  <div @click="backTop()"></div>
 </template>
 
 <script>

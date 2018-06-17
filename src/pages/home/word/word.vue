@@ -38,7 +38,6 @@ export default {
   h1{
     margin-top: 2.19rem;
     text-align: center;
-    font-family: PingFangSC-Regular;
     font-size: 3.1rem;
     color: #203152;
     letter-spacing: 2.08px;

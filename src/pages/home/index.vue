@@ -1,43 +1,46 @@
 <template>
-  <swiper :options="swiperOption" ref="swiperEl">
-    <swiper-slide>
-      <div class="bgImg pagesHeight">
-        <asd-header />
-        <header-cont />
-      </div>
-    </swiper-slide>
-    <swiper-slide>
-      <home-restaurant /> 
-    </swiper-slide>
-    <swiper-slide>
-      <home-word />
-    </swiper-slide>
-    <swiper-slide>
-      <own-good />
-    </swiper-slide>
-    <swiper-slide>
-      <management />
-    </swiper-slide>
-    <swiper-slide>
-      <Charging />
-    </swiper-slide>
-    <swiper-slide>
-      <improvement />
-    </swiper-slide>
-    <swiper-slide>
-      <calling />
-    </swiper-slide>
-    <swiper-slide>
-      <ai/>
-    </swiper-slide>
-    <swiper-slide>
-      <team/>
-    </swiper-slide>
-    <swiper-slide>
-      <asd-footer />
-    </swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
-  </swiper>
+  <div>
+    <swiper :options="swiperOption" ref="swiperEl">
+      <swiper-slide>
+        <div class="bgImg pagesHeight">
+          <asd-header />
+          <header-cont />
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <home-restaurant /> 
+      </swiper-slide>
+      <swiper-slide>
+        <home-word />
+      </swiper-slide>
+      <swiper-slide>
+        <own-good />
+      </swiper-slide>
+      <swiper-slide>
+        <management />
+      </swiper-slide>
+      <swiper-slide>
+        <Charging />
+      </swiper-slide>
+      <swiper-slide>
+        <improvement />
+      </swiper-slide>
+      <swiper-slide>
+        <calling />
+      </swiper-slide>
+      <swiper-slide>
+        <ai/>
+      </swiper-slide>
+      <swiper-slide>
+        <team/>
+      </swiper-slide>
+      <swiper-slide>
+        <asd-footer />
+      </swiper-slide>
+      <div class="swiper-pagination" slot="pagination"></div>
+    </swiper>
+    <div class="backImg" @click="backTop"></div>
+  </div>
 </template>
 
 <script>
@@ -63,6 +66,7 @@ export default {
         mousewheel: true,
         height: window.innerHeight,
         keyboard: true,
+        thisMounted: false,
         pagination: {
           el: '.swiper-pagination',
           clickable: true
@@ -86,15 +90,15 @@ export default {
   },
   computed: {
     swiper() {
-      return this.$refs.swiperEl.swiper
+      if(this.thisMounted) { return this.$refs.swiperEl.swiper}
+      return null;
     }
   },
   mounted () {
+    this.thisMounted = true;
     const _methodFn = new MethodFn();
     _methodFn.pagesHeight('.pagesHeight')
     _methodFn.pagesHeight('.charging')
-
-    window.swiper = this.swiper
     this.$eventHub.$on('navClick', (index) => {
       this.slideTo(index)
     })
@@ -102,12 +106,28 @@ export default {
   methods: {
     slideTo(index){
       this.swiper.slideTo(index)
+    },
+    backTop(){
+      this.swiper.slideTo(0)
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+
+  .backImg {
+    background: url("/static/home/backImg.png") no-repeat center center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 4rem;
+    bottom: 2rem;
+    background-size: cover;
+    z-index: 99;
+    cursor: pointer;
+  }
 
   .swiper-slide {
     overflow: hidden;
