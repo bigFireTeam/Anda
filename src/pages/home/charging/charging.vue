@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 .charging {
-  background: url("/static/home/Group.png") no-repeat center center;
+  background: url("/static/home/Group.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   .col-div-position {

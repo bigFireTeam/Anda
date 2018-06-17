@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 animate fadeInUpBig">
-            <img src="/static/home/Group1.png" class="group1" />
+            <img src="/static/home/Group1.jpg" class="group1" />
             <img src="/static/home/houtai.gif" class="group2" />
           </div>
         <div class="col-md-8 div-height" ref="colHieght">
