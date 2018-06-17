@@ -33,6 +33,9 @@
     <swiper-slide>
       <team/>
     </swiper-slide>
+    <swiper-slide>
+      <asd-footer />
+    </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
 </template>
@@ -48,7 +51,8 @@ import Charging from './charging/charging'
 import Improvement from './improvement/improvement'
 import Calling from './calling/calling'
 import ai from './product/AI'
-import team from './team/team'
+import team from './team/team2'
+import asdFooter from '../../components/footer'
 import MethodFn from '../../Tools/method.js'
 export default {
   data () {
@@ -78,6 +82,7 @@ export default {
     Calling,
     ai,
     team,
+    asdFooter
   },
   computed: {
     swiper() {
@@ -86,11 +91,15 @@ export default {
   },
   mounted () {
     const _methodFn = new MethodFn();
-    _methodFn.pageHeight('.pagesHeight')
+    _methodFn.pagesHeight('.pagesHeight')
+    _methodFn.pagesHeight('.charging')
+
     window.swiper = this.swiper
     this.$eventHub.$on('navClick', (index) => {
       this.slideTo(index)
     })
+
+
   },
   methods: {
     slideTo(index){
@@ -117,9 +126,8 @@ export default {
 
   .bgImg {
     background-image: linear-gradient(34deg, #ECF3FF 0%, #FFFFFF 100%);
-    background: url('/static/home/Group7.jpg') no-repeat right bottom;
-    // background-size: cover;
-    background-size: 100% 160%;
+    background: url('/static/home/Group7.jpg') no-repeat right 200%;
+    background-size: cover;
+    // background-size: 100% 160%;
   }
-
 </style>

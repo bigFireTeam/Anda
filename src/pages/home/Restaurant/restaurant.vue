@@ -8,26 +8,54 @@
               :h1Titel='h1Titel'
               :pTitle='pTitle'
               :spanTitle='spanTitle'
-              class="animate fadeInLeft fadeOutRight"
+              class="animate fadeInUpBig"
             />
           </div>
           <div class="icon-div">
             <ul class="ul-img">
-              <li v-for="(item, index) in iconUrl" :key="index">
-                <div>
-                  <img :src='item.imgUrl'>
-                </div>
-                <p>{{item.iconFont}}</p>
+              <li>
+                <div></div>
+                <p>共享充电</p>
+              </li>
+              <li>
+                <div></div>
+                <p>定位</p>
+              </li>
+              <li>
+                <div></div>
+                <p>手势及语音呼叫</p>
+              </li>
+              <li>
+                <div></div>
+                <p>点餐</p>
+              </li>
+              <li>
+                <div></div>
+                <p>支付</p>
+              </li>
+              <li>
+                <div></div>
+                <p>远程选桌</p>
+              </li>
+              <li>
+                <div></div>
+                <p>餐厅360°</p>
+              </li>
+              <li>
+                <div></div>
+                <p>70+技能云</p>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+    <back-top />
   </div>
 </template>
 
 <script>
+import BackTop from '../../../components/back'
 import ResTitle from '../../../components/titleCont'
 export default {
   data () {
@@ -38,6 +66,7 @@ export default {
               Ada通过所服务的众多餐饮企业，运用软硬件集合的AI+餐饮、云服务使餐饮企业的经营管理跨越到一个全新的航道。`,
       spanTitle: `用户的随身智能AI——WAITER
       餐厅的24小时经营管理店长`,
+      active: 0,
       iconUrl: [
         {
           imgUrl: '/static/home/icon/Group13.png',
@@ -52,7 +81,7 @@ export default {
           iconFont: '手势及语音呼叫'
         },
         {
-          imgUrl: '/static/home/icon/Group15.png',
+          imgUrl: '/static/home/icon/Group16.png',
           iconFont: '点餐'
         },
         {
@@ -75,7 +104,8 @@ export default {
     }
   },
   components: {
-    ResTitle
+    ResTitle,
+    BackTop
   }
 }
 </script>
@@ -112,18 +142,121 @@ export default {
   li {
     text-align: center;
     list-style: none;
-    img {
-      width: 6.06rem;
-      height: 6.06rem;
+    div {
+      transition: all 0.5s cubic-bezier(0.48, 0.5, 0.2, 1);
     }
     p {
-      font-family: PingFangSC-Regular;
+      font-family: '微软雅黑';
       font-size: 1rem;
       color: #203152;
       letter-spacing: 0.92px;
       text-align: center;
       line-height: 1.69rem;
       margin-top: 1.2rem;
+    }
+  }
+  li:nth-of-type(1) {
+    div {
+      background: url("/static/home/icon/Group13.png") no-repeat center center;
+      width: 6.06rem;
+      height: 6.06rem;
+    }
+    &:hover {
+      div {
+        background: url("/static/home/icon/Group29.png") no-repeat center center;
+        transform: scale(1.1); //放大 倍数随意
+      }
+    }
+  }
+  li:nth-of-type(2) {
+    div {
+      background: url("/static/home/icon/Group14.png") no-repeat center center;
+      width: 6.06rem;
+      height: 6.06rem;
+    }
+    &:hover {
+      div {
+        background: url("/static/home/icon/Group31.png") no-repeat center center;
+        transform: scale(1.1); //放大 倍数随意
+      }
+    }
+  }
+  li:nth-of-type(3) {
+    div {
+      background: url("/static/home/icon/Group15.png") no-repeat center center;
+      width: 6.06rem;
+      height: 6.06rem;
+    }
+    &:hover {
+      div {
+        background: url("/static/home/icon/Group32.png") no-repeat center center;
+        transform: scale(1.1); //放大 倍数随意
+      }
+    }
+  }
+  li:nth-of-type(4) {
+    div {
+      background: url("/static/home/icon/Group16.png") no-repeat center center;
+      width: 6.06rem;
+      height: 6.06rem;
+    }
+    &:hover {
+      div {
+        background: url("/static/home/icon/Group35.png") no-repeat center center;
+        transform: scale(1.1); //放大 倍数随意
+      }
+    }
+  }
+  li:nth-of-type(5) {
+    div {
+      background: url("/static/home/icon/Group17.png") no-repeat center center;
+      width: 6.06rem;
+      height: 6.06rem;
+    }
+    &:hover {
+      div {
+        background: url("/static/home/icon/Group36.png") no-repeat center center;
+        transform: scale(1.1); //放大 倍数随意
+      }
+    }
+  }
+  li:nth-of-type(6) {
+    div {
+      background: url("/static/home/icon/Group18.png") no-repeat center center;
+      width: 6.06rem;
+      height: 6.06rem;
+    }
+    &:hover {
+      div {
+        background: url("/static/home/icon/Group37.png") no-repeat center center;
+        transform: scale(1.1); //放大 倍数随意
+      }
+    }
+  }
+  li:nth-of-type(7) {
+    div {
+      background: url("/static/home/icon/Group19.png") no-repeat center center;
+      width: 6.06rem;
+      height: 6.06rem;
+    }
+    &:hover {
+      div {
+        background: url("/static/home/icon/Group44.png") no-repeat center center;
+        transform: scale(1.1); //放大 倍数随意
+      }
+    }
+  }
+  li:nth-of-type(8) {
+    div {
+      background: url("/static/home/icon/Group20.png") no-repeat center center;
+      width: 6.06rem;
+      height: 6.06rem;
+    }
+    &:hover {
+      div {
+        background: url("/static/home/icon/Group40.png") no-repeat center center;
+        transform: scale(1.1); //放大 倍数随意
+      }
     }
   }
 }

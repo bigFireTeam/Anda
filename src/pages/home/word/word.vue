@@ -3,18 +3,20 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="animate fadeInLeft fadeOutRight">{{h1Title}}</h1>
-          <p class="animate fadeInLeft fadeOutRight">{{pTitle}}</p>
+          <h1 class="animate fadeInUpBig">{{h1Title}}</h1>
+          <p class="animate fadeInUpBig">{{pTitle}}</p>
           <div class="div-img">
             <img :src="imgurl" />
           </div> 
         </div>
       </div>
     </div>
+    <back-top />
   </div>
 </template>
 
 <script>
+import BackTop from '../../../components/back'
 export default {
   data () {
     return {
@@ -22,6 +24,9 @@ export default {
       h1Title: `外观轻巧考究，性能厚积薄发`,
       pTitle: `真正的小身材大大大智慧`
     }
+  },
+  components: {
+    BackTop
   }
 }
 </script>
@@ -45,11 +50,12 @@ export default {
     color: #203152;
     letter-spacing: 1.88px;
     text-align: center;
+    margin-top: 3rem;
   }
   .div-img {
     img {
       width: 50%;
-      margin: 0 auto;
+      margin: 7rem auto 0;
       display: block;
     }
   }

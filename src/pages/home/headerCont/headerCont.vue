@@ -4,19 +4,20 @@
       <div class="container-div">
         <div class="row">
           <div class="col-md-6">
-            <div class="title">
-              <h1 class="animate fadeInLeft fadeOutRight">
+            <div class="title animate fadeInUpBig">
+              <img :src="adsTitle" />
+              <!-- <h1 class="animate fadeInLeft fadeOutRight">
                 2018 Ada全球合作商家重磅上市
               </h1>
               <p style="display: block !important;  margin-top: 2.31rem;line-height: 3.5rem;" class="animate fadeInLeft fadeOutRight">
-                <img :src="adsTitle" />
+             
               </p>
               <p>
                 <span class="p-s-style animate fadeInLeft fadeOutRight">
                   Ada＆百度AI实验室全新智献<br/>
                   全球首款涵盖生活餐饮娱乐全场景
                 </span>
-              </p>
+              </p> -->
             </div>
           </div>
           <div class="col-md-6">
@@ -29,12 +30,16 @@
 </template>
 
 <script>
+import BackTop from '../../../components/back'
 export default {
   data () {
     return {
       imgUrl: '/static/home/Group8.png',
       adsTitle: '/static/home/Group9.png'
     }
+  },
+  components: {
+    BackTop
   }
 }
 </script>
@@ -45,21 +50,9 @@ export default {
   margin: 11rem auto 0;
 }
 .title {
-  h1 {
-    font-family: PingFangSC-Semibold;
-    font-size: 2.5rem;
-    color: #203152;
-    letter-spacing: 0;
-    line-height: 2.5rem;
-  }
-  .ads-title {
-    margin-top: 2.31rem;
-    display: block !important;
-    line-height: 3.5rem;
-  }
-  .p-s-style {
-    margin-top: 2.81rem;
-    color: #868E9C;
+  img {
+    display: block;
+    position: absolute;
   }
 }
 .imgStyle {

@@ -10,9 +10,9 @@
         </div>
       </div>
       <div class="col-md-4 div-img-bg g-p-style">
-        <div class="love-div">
-          <h1 class="animate fadeInLeft fadeOutRight">懂你所爱 为你着想</h1>
-          <p class="animate fadeInLeft fadeOutRight">只需要一键授权，即可链接ADA大数据享受只能到店助<br/>
+        <div class="love-div fadeInUpBig animate">
+          <h1 class="">懂你所爱 为你着想</h1>
+          <p class="">只需要一键授权，即可链接ADA大数据享受只能到店助<br/>
         理服务<br/>
         通过MAGIC SENSOR智能系统分析用户餐饮习惯，<br/>
         并立即做出千人千面的点餐推荐。安全保护隐私，数<br/>
@@ -28,20 +28,24 @@
           <img src="/static/home/good5.jpg" class="g-p-style"/>
         </div>
       </div>
-      <div class="col-md-4 img-padding">
+      <div class="col-md-4 img-padding good3">
         <img src="/static/home/good6.jpg" class="g-p-style" />
       </div>
     </div>
+    <back-top />
   </div>
 </template>
 
 <script>
-
+import BackTop from '../../../components/back'
 export default {
   data () {
     return {
     }
-  }  
+  },
+  components: {
+    BackTop
+  }
 }
 </script>
 
@@ -50,8 +54,25 @@ export default {
   padding-top: 6.31rem;
   .row {
     margin: 0;
+    .good3{
+      width: 40rem;
+      height: 40rem;
+      overflow: hidden;
+    }
     .img-padding {
       padding: 0;
+      .good2,.good1 {
+        width: 20rem;
+        height: 20rem;
+        overflow: hidden;
+      }
+      img {
+        transition: all 1s;
+        display: block;
+        &:hover{
+          transform: scale(1.4); //放大 倍数随意
+        }
+      }
     }
     img {
       display: block;

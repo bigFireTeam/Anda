@@ -2,27 +2,30 @@
   <div class="pagesHeight calling-div">
     <div class="container-fluid">
       <div class="row pagesHeight">
-        <div class="calling-style animate fadeInLeft fadeOutRight">
+        <div class="calling-style animate fadeInUpBig">
           <h1>一键呼叫<br/>后台管理顾客呼叫服务</h1>
           <p>对接Ada智能管理，由前台统一调度，根据响应速度<br/>和次数，作为服务员另一项绩效考核参</p>
         </div>
       </div>
     </div>
+    <back-top />
   </div>
 </template>
 
 <script>
+import BackTop from '../../../components/back'
 export default {
-  
+  components: {
+    BackTop
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .calling-div {
-  background: url("/static/home/pages1.jpg") no-repeat center center;
-  // margin-top: 2.94rem;
-  // background-size: cover;
-  background-size: 100% 114%;
+  background: url("/static/home/pages1.jpg") no-repeat center 70%;
+  margin: 1rem;
+  background-size: cover;
   .row {
     justify-content: flex-end;
     align-items: center;

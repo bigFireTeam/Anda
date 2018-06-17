@@ -4,7 +4,8 @@
       <div class="row">
         <div class="col-md-4 div-logo">
           <div class="logo">
-            <img src="" alt="">
+            <img src="/static/home/logo.png" class="logo-img">
+            <img src="/static/home/timg.png" class="baidu-img">
           </div>
         </div>
         <div class="col-md-4">
@@ -28,6 +29,12 @@ export default {
   header {
     .row {
       justify-content: space-between;
+      .logo-img {
+        margin-top: 3.88rem;
+      }
+      .baidu-img {
+        margin-left: 4.38rem;
+      }
     }
   }
 </style>

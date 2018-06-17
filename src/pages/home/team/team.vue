@@ -1,10 +1,12 @@
 <template>
   <div :class="[$style.team_container, 'js-team-container']" id="team">
-    <h1 :class="[$style.team_header,'animate fadeInLeft fadeOutRight']">
-      <strong>团队介绍</strong>
-      <br><small>Team Introduction</small>
-    </h1>
-    <gallary :team="teams"></gallary>
+    <div :class="$style.bg_team" ref="divHeight">
+      <h1 :class="[$style.team_header,'animate fadeInLeft fadeOutRight']">
+        <strong>团队介绍</strong>
+        <br><small>Team Introduction</small>
+      </h1>
+      <gallary :team="teams"></gallary>
+    </div>
   </div>
 </template>
 <script>
@@ -32,24 +34,29 @@
       Gallary
     },
     mounted () {
-      this.$methodFn.pageHeight('.js-team-container')
+      this.$methodFn.pagesHeight('.js-team-container')
+      this.$refs.divHeight.style.height = window.innerHeight + 'px'
     }
   }
 </script>
 
 <style module>
-  .team_header {
-    margin-top: 6.5rem;
-    margin-bottom: 2.8rem;
-    line-height: 2.5rem;
-    font-size: 2.5rem;
-    color: #203152;
-    letter-spacing: .625rem;
-    text-align: center;
-  }
+.bg_team{
+  background: url("/static/home/tiemBg.png") no-repeat center center;
+  background-size: cover; 
+}
+.team_header {
+  padding-top: 6.5rem;
+  margin-bottom: 2.8rem;
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+  color: #fff;
+  letter-spacing: .625rem;
+  text-align: center;
+}
 
-  .team_header small {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
+.team_header small {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
 </style>

@@ -2,13 +2,13 @@
   <div class="management pagesHeight">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 animate fadeInUpBig">
             <img src="/static/home/Group1.png" class="group1" />
-            <img src="/static/home/Group2.png" class="group2" />
+            <img src="/static/home/houtai.gif" class="group2" />
           </div>
         <div class="col-md-8 div-height" ref="colHieght">
-          <div class="management-cont animate fadeInLeft fadeOutRight">
-            <h1 c>智能云后台管理</h1>
+          <div class="management-cont animate fadeInUpBig">
+            <h1>智能云后台管理</h1>
             <p>
               Ada管家云后台对接智能硬件、用户端，前台统一管理调度，数<br/>据直接生成报表，随时登录，灵活查询，让商家运筹帷幄，打造AI+餐厅。
             </p>
@@ -19,10 +19,12 @@
         </div>
       </div>
     </div>
+    <back-top />
   </div>
 </template>
 
 <script>
+import BackTop from '../../../components/back'
 export default {
   methods: {
     divHieght () {
@@ -32,6 +34,9 @@ export default {
   },
   mounted () {
     // this.divHieght()
+  },
+  components: {
+    BackTop
   }
 }
 </script>
@@ -68,18 +73,20 @@ export default {
   }
   .group1, .group2 {
     position: absolute;
+    transition: all 1s;
   }
   .group1 {
     width: 46.56rem;
-    height: 32.75rem;
     left: 19.69rem;
     top: 12rem;
   }
   .group2 {
     width: 49.63rem;
-    height: 33.38rem;
-    top: 17.69rem;
+    top: 16.36rem;
     left: 23.69rem;
+    &:hover{
+      transform: scale(1.2); //放大 倍数随意
+    }
   }
 }
 </style>
