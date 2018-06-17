@@ -93,13 +93,17 @@ export default {
   margin-top: 7.81rem;
   .raduis {
     position: absolute;
-    width: 9.37rem;
-    height: 9.37rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%; 
     left: 1.8rem;
-    bottom: 14.7rem;
+    bottom: 100%;
+    margin-bottom: -6rem;
     transition: all 1s;
     z-index: 9999;
+    img {
+      width: 100%;
+    }
     &:hover {
       transform: scale(1.2); //放大 倍数随意
     }
