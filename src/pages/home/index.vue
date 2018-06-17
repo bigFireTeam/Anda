@@ -39,7 +39,7 @@
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
-    <div class="backImg" @click="backTop"></div>
+    <div v-show="backShow" class="backImg" @click="backTop"></div>
   </div>
 </template>
 
@@ -60,6 +60,7 @@ import MethodFn from '../../Tools/method.js'
 export default {
   data () {
     return {
+      backShow: false,
       swiperOption: {
         direction: 'vertical',
         slidesPerView: 1,
@@ -70,6 +71,11 @@ export default {
         pagination: {
           el: '.swiper-pagination',
           clickable: true
+        },
+        on: {
+          slideChangeTransitionEnd: function() {
+            this.backShow = this.swiper.activeIndex
+          }.bind(this)
         }
       }
     }
