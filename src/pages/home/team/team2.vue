@@ -98,11 +98,7 @@ export default {
     border-radius: 50%; 
     left: 1.8rem;
     bottom: 14.7rem;
-    transition: all 1s;
     z-index: 9999;
-    &:hover {
-      transform: scale(1.2); //放大 倍数随意
-    }
   }
   p {
     font-size: 1.13rem;

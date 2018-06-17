@@ -8,7 +8,7 @@
               :h1Titel='h1Titel'
               :pTitle='pTitle'
               :spanTitle='spanTitle'
-              class="animate fadeInUpBig"
+             
             />
           </div>
           <div class="icon-div">

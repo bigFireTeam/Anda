@@ -50,8 +50,11 @@ export default {
   }
   .anmientde {
     position: absolute;
-    right: 9.81rem;
+    right: 20.81rem;
     bottom: 0rem;
+    img {
+      width: 160%;
+    }
   }
   .dian {
     position: absolute;

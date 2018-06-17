@@ -1,12 +1,12 @@
 <template>
   <div class="col-md-5 div-bg">
-    <h1 class="title" :style="{color: $color}">
+    <h1 class="title animate fadeInUpBig" :style="{color: $color}">
       {{h1Titel}}
     </h1>
-    <p :style="{color: $color}" class="line-style line-p-style">
+    <p :style="{color: $color}" class="line-style line-p-style animate fadeInUpBig">
       {{pTitle}}
     </p>
-    <p class="line-style line-span-style">
+    <p class="line-style line-span-style animate fadeInUpBig">
       <span :style="{color: $color}">
         {{spanTitle}}
       </span>

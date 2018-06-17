@@ -37,24 +37,38 @@ export default {
   background-image: linear-gradient(0deg, #ECF3FF 3%, #FFFFFF 100%);
   h1{
     margin-top: 2.19rem;
+    width: 42.38rem;
+    height:8.06rem;
     text-align: center;
     font-size: 3.1rem;
     color: #203152;
     letter-spacing: 2.08px;
-    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -21.19rem;
   }
   p {
     font-family: PingFangSC-Semibold;
+    width: 45.06rem;
+    height:5.25rem;
     font-size: 3.75rem;
     color: #203152;
     letter-spacing: 1.88px;
     text-align: center;
     margin-top: 3rem;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -22.35rem;
+    top: 8rem;
   }
   .div-img {
     img {
+      position: relative;
+      z-index: 9999;
       width: 50%;
-      margin: 7rem auto 0;
+      margin: 22rem auto 0;
       display: block;
     }
   }
