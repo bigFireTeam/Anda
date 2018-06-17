@@ -9,7 +9,7 @@
         <div class="row">
           <div class="col-md-3 taem-div animate fadeInUpBig">
             <div class="raduis">
-              <img src="/static/home/header1.jpg" />
+              <img src="/static/home/header1.png" />
             </div>
             <div class="fonts ">
               <h1>兰进 CEO</h1>
@@ -20,7 +20,7 @@
           </div>
           <div class="col-md-3 taem-div animate fadeInUpBig">
             <div class="raduis">
-              <img src="/static/home/header2.jpg" />
+              <img src="/static/home/header2.png" />
             </div>
             <div class="fonts">
               <h1>欧洲  COO</h1>
@@ -31,7 +31,7 @@
           </div>
           <div class="col-md-3 taem-div animate fadeInUpBig">
             <div class="raduis">
-              <img src="/static/home/header3.jpg" />
+              <img src="/static/home/header3.png" />
             </div>
             <div class="fonts">
               <h1>许建平  CTO</h1>
