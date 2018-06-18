@@ -9,7 +9,7 @@
           <h1>Contact us</h1>
           <p>
             <img src="/static/home/dianhua.png" />
-            <span>联系电话：028-6767318</span>
+            <span>联系电话：028-66767318</span>
           </p>
           <p>
             <img src="/static/home/dizhi.png" />
