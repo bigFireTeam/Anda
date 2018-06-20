@@ -144,6 +144,7 @@ export default {
     list-style: none;
     div {
       transition: all 0.5s cubic-bezier(0.48, 0.5, 0.2, 1);
+      border-radius: 50%; 
     }
     p {
       font-size: 1rem;

@@ -53,7 +53,7 @@ export default {
     right: 20.81rem;
     bottom: 0rem;
     img {
-      width: 160%;
+      width: 100%;
     }
   }
   .dian {

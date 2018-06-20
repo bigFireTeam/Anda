@@ -47,12 +47,14 @@ export default {
 <style lang="scss" scoped>
 .container-div {
   width: 94%;
-  margin: 11rem auto 0;
+  // margin: 11rem auto 0;
+  margin: 5rem auto 0;
 }
 .title {
   img {
     display: block;
     position: absolute;
+    width: 100%;
   }
 }
 .imgStyle {

@@ -40,7 +40,7 @@
     color: #fff;
 
     h1 {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
       letter-spacing: .25rem;
       font-size: 2.5rem;
     }

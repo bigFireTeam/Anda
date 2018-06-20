@@ -50,7 +50,8 @@ export default {
   .shao {
     position: absolute;
     left: 8.52rem;
-    bottom: 8.19rem;
+    // bottom: 8.19rem;
+    bottom: .19rem;
     overflow: hidden;
     img {
       transition: all 1s;
