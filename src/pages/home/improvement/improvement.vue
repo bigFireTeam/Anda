@@ -50,14 +50,20 @@ export default {
   .shao {
     position: absolute;
     left: 8.52rem;
-    // bottom: 8.19rem;
-    bottom: .19rem;
+    bottom: 8.19rem;
     overflow: hidden;
     img {
       transition: all 1s;
       &:hover {
       transform: scale(1.1); //放大 倍数随意
       }
+    }
+  }
+}
+@media screen and (max-width: 1366px) { 
+  .improvement-style {
+    .shao {
+       bottom: .19rem;
     }
   }
 }

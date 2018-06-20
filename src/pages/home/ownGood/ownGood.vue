@@ -104,4 +104,16 @@ export default {
     }
   }
 }
+@media screen and (max-width: 1366px) { 
+  .img-bg {
+    .row {
+      .good3{
+        img {
+          width: 40rem;
+          height: 40rem;
+        }
+      }
+    }
+  }
+}
 </style>

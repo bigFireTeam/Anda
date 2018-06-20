@@ -47,17 +47,25 @@ export default {
 <style lang="scss" scoped>
 .container-div {
   width: 94%;
-  // margin: 11rem auto 0;
-  margin: 5rem auto 0;
+  margin: 11rem auto 0;
 }
 .title {
   img {
     display: block;
     position: absolute;
-    width: 100%;
   }
 }
 .imgStyle {
   width: 100%;
+}
+@media screen and (max-width: 1366px) { 
+  .container-div {
+    margin: 5rem auto;
+  }
+  .title {
+    img {
+      width: 100%;
+    }
+  }
 }
 </style>

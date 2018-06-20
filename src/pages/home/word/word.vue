@@ -37,7 +37,7 @@ export default {
   background-image: linear-gradient(0deg, #ECF3FF 3%, #FFFFFF 100%);
   h1{
     margin-top: 2.19rem;
-    width: 45.38rem;
+    width: 42.38rem;
     height:8.06rem;
     text-align: center;
     font-size: 3.1rem;
@@ -50,7 +50,7 @@ export default {
   }
   p {
     font-family: PingFangSC-Semibold;
-    width: 48.06rem;
+    width: 45.06rem;
     height:5.25rem;
     font-size: 3.75rem;
     color: #203152;
@@ -70,6 +70,16 @@ export default {
       width: 50%;
       margin: 22rem auto 0;
       display: block;
+    }
+  }
+}
+@media screen and (max-width: 1366px) { 
+  .word {
+    h1{ 
+      width: 45.38rem;
+    }
+    p {
+      width: 48.06rem;
     }
   }
 }

@@ -260,4 +260,9 @@ export default {
     }
   }
 }
+@media screen and (max-width: 1366px) { 
+  .div-bg {
+    padding-bottom: 2.3rem;
+  }
+}
 </style>

@@ -53,13 +53,22 @@ export default {
     right: 20.81rem;
     bottom: 0rem;
     img {
-      width: 100%;
+      width: 160%;
     }
   }
   .dian {
     position: absolute;
     bottom: 6.84rem;
     left: 10.95rem;
+  }
+}
+@media screen and (max-width: 1366px) { 
+  .charging {
+    .anmientde {
+      img {
+         width: 100%;
+      }
+    }
   }
 }
 </style>
