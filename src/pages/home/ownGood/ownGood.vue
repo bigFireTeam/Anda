@@ -12,7 +12,7 @@
       <div class="col-md-4 div-img-bg g-p-style">
         <div class="love-div fadeInUpBig animate">
           <h1 class="">懂你所爱 为你着想</h1>
-          <p class="">只需要一键授权，即可链接ADA大数据享受只能到店助<br/>
+          <p class="">只需要一键授权，即可链接ADA大数据享受智能到店助<br/>
         理服务<br/>
         通过MAGIC SENSOR智能系统分析用户餐饮习惯，<br/>
         并立即做出千人千面的点餐推荐。安全保护隐私，数<br/>
